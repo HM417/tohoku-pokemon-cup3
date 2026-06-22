@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tohoku Pokémon cup ～とんぺい杯～</title>
+    <style>
+        :root {
+            --primary-color: #2a75d3;
+            --secondary-color: #ffcb05;
+            --text-color: #333;
+            --bg-color: #f4f4f9;
+        }
+         body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            
+            /* 【ここから変更】背景画像の設定 */
+            background-image: url('champions.jpg'); /* 表示したい画像を指定 */
+            background-size: cover;          /* 画面全体に画像をフィットさせる */
+            background-position: center;     /* 画像の中心を画面の中央に合わせる */
+            background-attachment: fixed;   /* 画面をスクロールしても背景を固定する */
+            background-repeat: no-repeat;    /* 画像の繰り返しを防ぐ */
+            /* 【ここまで変更】 */
+            
+            margin: 0;
+            padding: 0;      
+         header {
+            background: none;        /* 【ここを変更】背景を完全に無くす */
+            color:#00a86b;; /* 【ここを変更】背景が白/透明になるので、文字を青色にして見やすく */
+            text-align: center;
+            padding: 3rem 1rem 1rem 1rem; /* 上にゆとりを持たせ、下を少し詰めました */
+            border-bottom: none;     /* 【ここを変更】下の黄色い線も無くしてスッキリさせる */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;       /* 文字を少し大きめにして存在感をアップ */
+            font-weight: 800;
+        }
+        header p {
+            margin: 0.3rem 0 0 0;
+            font-size: 1.4rem;
+            color: #00a86b;;             /* サブタイトル（とんぺい杯）を落ち着いたグレーに */
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--primary-color);
+            padding-left: 10px;
+            margin-top: 0;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+        }
+        .form-container {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .form-wrapper {
+            position: relative;
+            padding-bottom: 520px; /* フォームの高さ */
+            height: 0;
+            overflow: hidden;
+        }
+        .form-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 700px;
+            height: 520px;
+            border: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tohoku Pokémon cup</h1>
+        <p>～とんぺい杯～</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>ポケモン対戦を始めて見ませんか？</h2>
+            <p>今年で３０周年を迎えたポケットモンスター、略してポケモン。もちろんポケモンと旅をしながらストーリーをクリアするのも楽しいのですが、ポケモン同士で対戦をするのもまた面白いものです。今回は、最近スマホ版もリリースされたPokémonChampionsでその良さを知ってもらいたい！！</p>
+        </section>
+
+        <section>
+            <h2>開催概要</h2>
+            <ul>
+                <li><strong>日程：</strong> 8月1日（申し込み締め切り日：<span class="highlight">7月14日</span>）</li>
+                <li><strong>形式：</strong> オンライン開催（使用ソフト：PokémonChampions(必須)Pokémon HOME(任意））</li>
+                <li><strong>定員：</strong> 10～20名程度（誰でも参加可）</li>
+                <li><strong>参加料：</strong> 無料</li>
+                <li><strong>運営：</strong> TUGメンバー</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>大会ルール</h2>
+            <h3>【使用可能ポケモン】</h3>
+            <ul>
+                <li><strong>レンタルポケモンのみ</strong>（※ただし、<span class="highlight">ブリジュラスとイダイトウの使用は禁止</span>とします。レンタルポケモンのトレーニングは可能です。）</li>
+                <li>参加者は大会用の専用Discordサーバーへお入りいただきます。そして、対戦開始前に、主催者（H.M.）にDiscordでパーティーの画像（ボックスでレンタルポケモンかどうかが判別できる状態のもの）を送信してもらいます。</li>
+　　　　　　　　
+            </ul>
+            
+            <h3>【試合形式】</h3>
+            <ul>
+　　　　　　　 <li>大会はトーナメント形式で行います</li>
+                <li>決勝戦以外は<strong>1回勝負</strong>です。</li>
+                <li>決勝戦は<strong>BO3（3本先取）</strong>とします。</li>
+                <li>各対戦には運営スタッフが審判役として観戦します。</li>
+                <li>対戦ごとにパーティーの変更は可能です。</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>優勝景品</h2>
+            <p><strong>ゲッコウガ（色違い）</strong></p>
+            <ul>
+                <li>能力ポイント 0 /個体値 6V /性格　陽気</li>
+                <li>技構成：アクアブレイク、ダストシュート、けたぐり、かげうち</li>
+            </ul>
+            <p><small>※景品の受け渡しは「ポケモンホーム」上での交換で行います。事前にダウンロードおよび交換ができる状態にしてください。（どうしても不可能な場合は『ポケットモンスター スカーレット・バイオレット』での交換、または景品なしとします。交換に出すポケモンは何でも構いません。）</small></p>
+        </section>
+
+        <section>
+            <h2>注意事項・禁止事項</h2>
+            <ul>
+                <li>使用禁止ポケモンの使用、および改造行為は不正行為とみなします。</li>
+                <li>不正行為が発覚した場合、<span class="highlight">その場で敗退</span>となります。</li>
+            </ul>
+        </section>
+
+        <section class="form-container">
+            <h2>エントリーフォーム</h2>
+            <p>以下のリンクより必要事項を記入して、7月14日までにお申し込みください。</p>
+            
+            <div style="margin: 2rem 0;">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScjqlu6civ-J86GT0ks6FxG_u1BDVw3zn5Cy9ATqq9gKkOhHA/viewform?usp=header" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   style="display: inline-block; padding: 12px 36px; background-color: var(--primary-color); color: white; text-decoration: none; font-weight: bold; border-radius: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: opacity 0.2s;">
+                   エントリーフォームを開く (Google Forms)
+                </a>
+            </div>
+        </section>
+<section>
+ <li><a href="https://apps.apple.com/jp/app/pokémon-champions/id6741503079" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); font-weight: bold; text-decoration: underline;">PokémonChampions　iOSのダウンロードはこちらから</a>）</li>
+ <li><a href="https://play.google.com/store/apps/details?id=jp.pokemon.pokemonchampions&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); font-weight: bold; text-decoration: underline;">PokémonChampions　androidのダウンロードはこちらから</a>）</li>
+ <li><a href="https://apps.apple.com/jp/app/pokémon-home/id1485352913" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); font-weight: bold; text-decoration: underline;">Pokémon HOME iOSのダウンロードはこちらから</a>）</li>
+ <li><a href="https://play.google.com/store/apps/details?id=jp.pokemon.pokemonhome&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" style="color: var(--primary-color); font-weight: bold; text-decoration: underline;">Pokémon HOME androidのダウンロードはこちらから</a>）</li>
+ </section>
+
+
+
+
+    </div>
+
+    <footer>
+        <p>© Tohoku Pokémon cup ～とんぺい杯～ 運営事務局 (TUG)</p>
+    </footer>
+
+</body>
+</html>
